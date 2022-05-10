@@ -15,14 +15,14 @@ class _ProductSliderState extends State<ProductSlider> {
     return Padding(
       padding: const EdgeInsets.all(8.0),
       child: Container(
-        height: 200,
+        height: 150,
         child: Carousel(
           images: [
-            AssetImage('assets/slider/Women1.jpg'),
-            AssetImage('assets/slider/Women2.jpg'),
-            AssetImage('assets/slider/Women3.jpg'),
-            AssetImage('assets/slider/men1.jpg'),
-            AssetImage('assets/slider/men2.jpg'),
+            AssetImage('assets/slider/manSlide.jpg'),
+            AssetImage('assets/slider/womenSlide.jpg'),
+            AssetImage('assets/slider/bagSlide.jpg'),
+            AssetImage('assets/slider/watchSlide.jpg'),
+            AssetImage('assets/slider/shoesSlide.jpg'),
           ],
           borderRadius: true,
           radius: Radius.circular(30),
@@ -30,7 +30,7 @@ class _ProductSliderState extends State<ProductSlider> {
           dotIncreasedColor: kPrimaryColor,
           animationCurve: Curves.fastLinearToSlowEaseIn,
             animationDuration: Duration(
-              milliseconds: 800,
+              milliseconds: 900,
             ),
         ),
       ),

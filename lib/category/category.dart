@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:online_shop/Pages/constants.dart';
 
 class Category extends StatefulWidget {
   @override
@@ -10,13 +11,13 @@ class _CategoryState extends State<Category> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 100,
+      height: 50,
       child: ListView(
         scrollDirection: Axis.horizontal,
         children: [
           CategoryProducts(
             press: () {},
-            image: 'assets/products/categoryMan.png',
+            image: 'assets/category/categoryMan.png',
             text: 'Mens',
           ),
           SizedBox(
@@ -24,24 +25,32 @@ class _CategoryState extends State<Category> {
           ),
           CategoryProducts(
             press: () {},
-            image: 'assets/products/categoryMan.png',
-            text: 'Mens',
+            image: 'assets/category/categoryWoman.png',
+            text: 'Womens',
           ),
           SizedBox(
             width: 20,
           ),
           CategoryProducts(
             press: () {},
-            image: 'assets/products/categoryMan.png',
-            text: 'Mens',
+            image: 'assets/category/categoryBag.png',
+            text: 'Back Packs',
           ),
           SizedBox(
             width: 20,
           ),
           CategoryProducts(
             press: () {},
-            image: 'assets/products/categoryMan.png',
-            text: 'Mens',
+            image: 'assets/category/categoryWatch.png',
+            text: 'Watchs',
+          ),
+          SizedBox(
+            width: 20,
+          ),
+          CategoryProducts(
+            press: () {},
+            image: 'assets/category/categoryShoes.png',
+            text: 'Shoes',
           ),
           SizedBox(
             width: 20,
@@ -71,6 +80,7 @@ class CategoryProducts extends StatelessWidget {
         onTap: press,
         child: Container(
           child: Chip(
+            backgroundColor: kPrimaryColor,
               label: Row(
             children: [
               Text(text),

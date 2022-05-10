@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:online_shop/Pages/constants.dart';
 
+import '../BottomNavBar.dart';
 import 'home_body.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -13,10 +14,10 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: kBGColor,
-
       body: HomeBody(),
+      //Native
 
-      drawer: Drawer(),
+      bottomNavigationBar: BottomNavBar(),
     );
   }
 }
