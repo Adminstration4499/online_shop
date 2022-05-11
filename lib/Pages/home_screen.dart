@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:online_shop/Pages/constants.dart';
+import 'package:online_shop/main_Page/enum.dart';
 
 import '../BottomNavBar.dart';
 import 'home_body.dart';
@@ -17,7 +18,9 @@ class _HomeScreenState extends State<HomeScreen> {
       body: HomeBody(),
       //Native
 
-      bottomNavigationBar: BottomNavBar(),
+      bottomNavigationBar: BottomNavBar(
+        selectingMenu: MenuState.home,
+      ),
     );
   }
 }
